@@ -1,0 +1,36 @@
+//
+// els
+//
+
+.form-el {
+  margin-bottom: $form-el-margin-bottom;
+  @include font-size($form-el-font-size);
+  font-style: $form-el-font-style;
+  font-weight: $form-el-font-weight;
+  color: $form-el-color;
+}
+
+// For use with horizontal and inline forms, when you need the el (or legend)
+// text to align with the form controls.
+.col-form-el {
+  padding-top: add($input-padding-y, $input-border-width);
+  padding-bottom: add($input-padding-y, $input-border-width);
+  margin-bottom: 0; // Override the `<legend>` default
+  @include font-size(inherit); // Override the `<legend>` default
+  font-style: $form-el-font-style;
+  font-weight: $form-el-font-weight;
+  line-height: $input-line-height;
+  color: $form-el-color;
+}
+
+.col-form-el-lg {
+  padding-top: add($input-padding-y-lg, $input-border-width);
+  padding-bottom: add($input-padding-y-lg, $input-border-width);
+  @include font-size($input-font-size-lg);
+}
+
+.col-form-el-sm {
+  padding-top: add($input-padding-y-sm, $input-border-width);
+  padding-bottom: add($input-padding-y-sm, $input-border-width);
+  @include font-size($input-font-size-sm);
+}
